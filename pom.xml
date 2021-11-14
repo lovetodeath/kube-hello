@@ -53,4 +53,46 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>interpark-nexus</id>
+            <name>Interpark Nexus Repository</name>
+            <url>http://nexus.interpark.com:8888/nexus/content/groups/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>jcenter-snapshots</id>
+            <name>jcenter</name>
+            <url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>interpark-nexus</id>
+            <name>Interpark Nexus Repository</name>
+            <url>http://nexus.interpark.com:8888/nexus/content/groups/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <layout>default</layout>
+        </pluginRepository>
+    </pluginRepositories>
+
 </project>
